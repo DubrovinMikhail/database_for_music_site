@@ -30,7 +30,7 @@ create table if not exists track (
 	id serial primary key,
 	name_track varchar(60) not null,
 	albom_id integer references albom(id) not null,
-	duration varchar(60) not null
+	duration integer not null
 );
 
 create table if not exists collection (
